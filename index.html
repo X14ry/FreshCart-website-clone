@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FreshCart Clone</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans text-gray-800 bg-white">
+
+<!-- ================= TOP BAR ================= -->
+<div class="bg-gray-100 text-sm">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
+    <p>Super Value Deals – Save more with coupons</p>
+    <div class="flex items-center gap-2">🇬🇧 English</div>
+  </div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<div class="bg-white border-b">
+  <div class="max-w-7xl mx-auto flex items-center gap-4 px-4 py-4">
+
+    <a href="#" class="flex items-center text-2xl font-bold">
+      <span class="text-green-600 mr-1">🛒</span> FreshCart
+    </a>
+
+    <div class="hidden lg:flex flex-1 max-w-xl border rounded-lg overflow-hidden">
+      <input class="flex-1 px-4 py-2 outline-none" placeholder="Search for products">
+      <button class="px-4 text-gray-500">🔍</button>
+    </div>
+
+    <button class="hidden lg:flex items-center gap-2 border px-4 py-2 rounded-lg text-sm">
+      📍 Location
+    </button>
+
+    <div class="ml-auto flex items-center gap-6 text-xl">
+      <div class="relative">❤️ <span class="absolute -top-2 -right-3 bg-green-600 text-white text-xs px-1.5 rounded-full">5</span></div>
+      <div>👤</div>
+      <div class="relative">🛒 <span class="absolute -top-2 -right-3 bg-green-600 text-white text-xs px-1.5 rounded-full">0</span></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= MENU BAR ================= -->
+<div class="border-b">
+  <div class="max-w-7xl mx-auto flex gap-6 px-4 py-3 items-center">
+    <button class="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold">☰ All Departments</button>
+    <a class="hover:text-green-600" href="#">Home</a>
+    <a class="hover:text-green-600" href="#">Dropdown Menu</a>
+    <a class="hover:text-green-600" href="#">Mega Menu</a>
+    <a class="hover:text-green-600" href="#">Dashboard</a>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="max-w-7xl mx-auto px-4 py-10">
+  <div class="bg-green-100 rounded-2xl p-10 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <span class="bg-yellow-400 px-4 py-1 rounded-full font-semibold text-sm">Opening Sale Discount 50%</span>
+      <h1 class="text-4xl md:text-5xl font-bold mt-4 mb-4">
+        SuperMarket For <br> Fresh Grocery
+      </h1>
+      <p class="text-gray-600 mb-6 max-w-md">
+        Introduced a new model for online grocery shopping and convenient home delivery.
+      </p>
+      <button class="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold">
+        Shop Now →
+      </button>
+    </div>
+
+    <div class="relative flex justify-center">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+           class="max-h-[420px] rounded-xl">
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED CATEGORIES ================= -->
+<section class="max-w-7xl mx-auto px-4 py-12">
+  <div class="flex justify-between items-center mb-6">
+    <h2 class="text-2xl font-bold">Featured Categories</h2>
+    <div class="flex gap-2">
+      <button class="w-8 h-8 border rounded-full">‹</button>
+      <button class="w-8 h-8 border rounded-full">›</button>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+    <!-- Category Card -->
+    <div class="border rounded-xl p-4 text-center hover:shadow-lg transition">
+      <img src="assets/images/bakery biscuits.jpg" class="mx-auto mb-4">
+      <p class="font-medium">Bakery & Biscuits</p>
+    </div>
+
+    <div class="border rounded-xl p-4 text-center hover:shadow-lg transition">
+      <img src="assets/images/instantfood-products-1609325.jpg" class="mx-auto mb-4">
+      <p class="font-medium">Instant Food</p>
+    </div>
+
+    <div class="border rounded-xl p-4 text-center hover:shadow-lg transition">
+      <img src="assets/images/Tea cofee and drinks.jpg" class="mx-auto mb-4">
+      <p class="font-medium">Tea, Coffee & Drinks</p>
+    </div>
+
+    <div class="border rounded-xl p-4 text-center hover:shadow-lg transition">
+      <img src="assets/images/Aata rice and dal.avif" class="mx-auto mb-4">
+      <p class="font-medium">Atta, Rice & Dal</p>
+    </div>
+
+    <div class="border rounded-xl p-4 text-center hover:shadow-lg transition">
+      <img src="assets/images/baby care.jpg" class="mx-auto mb-4">
+      <p class="font-medium">Baby Care</p>
+    </div>
+
+    <div class="border rounded-xl p-4 text-center hover:shadow-lg transition">
+      <img src="assets/images/chicken-meat-fish.jpg" class="mx-auto mb-4">
+      <p class="font-medium">Chicken, Meat & Fish</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROMO BANNERS ================= -->
+<section class="max-w-7xl mx-auto px-4 pb-16">
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <!-- Banner 1 -->
+    <div class="bg-gray-100 rounded-2xl p-8 flex items-center justify-between">
+      <div>
+        <h3 class="text-2xl font-bold mb-2">Fruits & Vegetables</h3>
+        <p class="text-gray-600 mb-4">Get Upto 30% Off</p>
+        <button class="bg-gray-900 text-white px-5 py-2 rounded-lg">Shop Now</button>
+      </div>
+      <img src="https://images.unsplash.com/photo-1542838132-92c53300491e"
+           class="h-40 rounded-xl hidden sm:block">
+    </div>
+
+    <!-- Banner 2 -->
+    <div class="bg-gray-100 rounded-2xl p-8 flex items-center justify-between">
+      <div>
+        <h3 class="text-2xl font-bold mb-2">Freshly Baked Buns</h3>
+        <p class="text-gray-600 mb-4">Get Upto 25% Off</p>
+        <button class="bg-gray-900 text-white px-5 py-2 rounded-lg">Shop Now</button>
+      </div>
+      <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec"
+           class="h-40 rounded-xl hidden sm:block">
+    </div>
+
+  </div>
+</section>
+
+<!-- POPULAR PRODUCTS -->
+<section class="max-w-7xl mx-auto px-4 pb-20">
+  <h2 class="text-2xl font-bold mb-8">Popular Products</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+    <!-- Product Card -->
+    <div class="border rounded-xl p-4 relative hover:shadow-lg">
+      <span class="absolute top-3 left-3 bg-red-500 text-white text-xs px-2 py-1 rounded">Sale</span>
+      <img src="assets/images/Haldiram.jpg" class="mx-auto mb-4">
+      <p class="text-sm text-gray-500">Snack & Munchies</p>
+      <h3 class="font-semibold">Haldiram's Sev Bhujia</h3>
+      <p class="text-yellow-500 text-sm">★★★★★ <span class="text-gray-400">(149)</span></p>
+      <div class="flex justify-between items-center mt-3">
+        <p class="font-bold">$18 <span class="line-through text-gray-400 text-sm">$24</span></p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded-lg">+ Add</button>
+      </div>
+    </div>
+
+    <div class="border rounded-xl p-4 relative hover:shadow-lg">
+      <span class="absolute top-3 left-3 bg-green-600 text-white text-xs px-2 py-1 rounded">14%</span>
+      <img src="assets/images/nutri.webp" class="mx-auto mb-4">
+      <p class="text-sm text-gray-500">Bakery & Biscuits</p>
+      <h3 class="font-semibold">NutriChoice Digestive</h3>
+      <p class="text-yellow-500 text-sm">★★★★★ <span class="text-gray-400">(25)</span></p>
+      <div class="flex justify-between items-center mt-3">
+        <p class="font-bold">$24</p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded-lg">+ Add</button>
+      </div>
+    </div>
+
+    <div class="border rounded-xl p-4 hover:shadow-lg">
+      <img src="assets/images/cadbury-5-star.webp" class="mx-auto mb-4">
+      <p class="text-sm text-gray-500">Bakery & Biscuits</p>
+      <h3 class="font-semibold">Cadbury 5 Star</h3>
+      <p class="text-yellow-500 text-sm">★★★★★ <span class="text-gray-400">(469)</span></p>
+      <div class="flex justify-between items-center mt-3">
+        <p class="font-bold">$32 <span class="line-through text-gray-400 text-sm">$35</span></p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded-lg">+ Add</button>
+      </div>
+    </div>
+
+    <div class="border rounded-xl p-4 relative hover:shadow-lg">
+      <span class="absolute top-3 left-3 bg-red-500 text-white text-xs px-2 py-1 rounded">Hot</span>
+      <img src="assets/images/chips.jpg" class="mx-auto mb-4">
+      <p class="text-sm text-gray-500">Snack & Munchies</p>
+      <h3 class="font-semibold">Onion Potato Chips</h3>
+      <p class="text-yellow-500 text-sm">★★★★☆ <span class="text-gray-400">(456)</span></p>
+      <div class="flex justify-between items-center mt-3">
+        <p class="font-bold">$3 <span class="line-through text-gray-400 text-sm">$5</span></p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded-lg">+ Add</button>
+      </div>
+    </div>
+
+    <div class="border rounded-xl p-4 hover:shadow-lg">
+      <img src="assets/images/salted-flavour-popcorn.jpeg" class="mx-auto mb-4">
+      <p class="text-sm text-gray-500">Instant Food</p>
+      <h3 class="font-semibold">Salted Popcorn</h3>
+      <p class="text-yellow-500 text-sm">★★★★★ <span class="text-gray-400">(39)</span></p>
+      <div class="flex justify-between items-center mt-3">
+        <p class="font-bold">$13 <span class="line-through text-gray-400 text-sm">$18</span></p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded-lg">+ Add</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FEATURES SECTION (NEW) ================= -->
+<section class="max-w-7xl mx-auto px-4 py-16 border-t">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+
+    <!-- Feature 1 -->
+    <div>
+      <div class="flex justify-center mb-4 text-green-600 text-4xl">🕒</div>
+      <h3 class="font-semibold text-lg mb-2">10 minute grocery now</h3>
+      <p class="text-gray-600 text-sm">
+        Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.
+      </p>
+    </div>
+
+    <!-- Feature 2 -->
+    <div>
+      <div class="flex justify-center mb-4 text-green-600 text-4xl">🎁</div>
+      <h3 class="font-semibold text-lg mb-2">Best Prices & Offers</h3>
+      <p class="text-gray-600 text-sm">
+        Cheaper prices than your local supermarket, great cashback offers.
+      </p>
+    </div>
+
+    <!-- Feature 3 -->
+    <div>
+      <div class="flex justify-center mb-4 text-green-600 text-4xl">📦</div>
+      <h3 class="font-semibold text-lg mb-2">Wide Assortment</h3>
+      <p class="text-gray-600 text-sm">
+        Choose from 5000+ products across food, personal care & household.
+      </p>
+    </div>
+
+    <!-- Feature 4 -->
+    <div>
+      <div class="flex justify-center mb-4 text-green-600 text-4xl">🔄</div>
+      <h3 class="font-semibold text-lg mb-2">Easy Returns</h3>
+      <p class="text-gray-600 text-sm">
+        Not satisfied? Return at doorstep & get refund within hours. No questions asked.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-white py-6 text-center">
+  © 2026 FreshCart Clone | Academic Project
+</footer>
+
+</body>
+</html>
